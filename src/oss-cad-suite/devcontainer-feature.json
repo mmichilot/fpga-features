@@ -1,0 +1,19 @@
+{
+    "name": "OSS CAD Suite",
+    "id": "oss-cad-suite",
+    "version": "1.0.0",
+    "description": "A collection of open source software used for digital logic design",
+    "options": {
+        "activateOnLogin": {
+            "type": "boolean",
+            "default": true,
+            "description": "Activate the OSS CAD Suite environment on login."
+        }
+    },
+    "containerEnv": {
+        "SUITE_DIR": "/usr/local/oss-cad-suite"
+    },
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/common-utils:2": {}
+    }
+}

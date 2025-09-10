@@ -1,0 +1,10 @@
+{
+    "activateOnLogin_false": {
+        "image": "mcr.microsoft.com/devcontainers/base:focal",
+        "features": {
+            "oss-cad-suite": {
+                "activateOnLogin": false
+            }
+        }
+    }
+}
