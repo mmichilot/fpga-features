@@ -15,7 +15,7 @@ A collection of open source software used for digital logic design
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| autoActivate | Activate the OSS CAD Suite environment on login. | boolean | false |
+| autoActivate | Automatically activate the OSS CAD Suite environment. | boolean | false |
 
 
 
