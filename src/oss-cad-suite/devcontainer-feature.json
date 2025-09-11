@@ -7,7 +7,7 @@
         "autoActivate": {
             "type": "boolean",
             "default": false,
-            "description": "Activate the OSS CAD Suite environment on login."
+            "description": "Automatically activate the OSS CAD Suite environment."
         }
     },
     "containerEnv": {
