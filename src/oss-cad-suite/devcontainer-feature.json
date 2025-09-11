@@ -4,9 +4,9 @@
     "version": "1.0.0",
     "description": "A collection of open source software used for digital logic design",
     "options": {
-        "activateOnLogin": {
+        "autoActivate": {
             "type": "boolean",
-            "default": true,
+            "default": false,
             "description": "Activate the OSS CAD Suite environment on login."
         }
     },
@@ -15,5 +15,6 @@
     },
     "dependsOn": {
         "ghcr.io/devcontainers/features/common-utils:2": {}
-    }
+    },
+    "postStartCommand": ["/bin/bash", "-c", "${SUITE_DIR}/start.sh"]
 }
