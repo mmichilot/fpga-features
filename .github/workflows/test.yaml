@@ -14,6 +14,7 @@ jobs:
       matrix:
         features:
           - oss-cad-suite
+          - riscv-toolchain
         baseImage:
           - debian:latest
           - ubuntu:latest
