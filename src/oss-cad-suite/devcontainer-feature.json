@@ -15,6 +15,5 @@
     },
     "dependsOn": {
         "ghcr.io/devcontainers/features/common-utils:2": {}
-    },
-    "postStartCommand": ["/bin/bash", "-c", "${SUITE_DIR}/start.sh"]
+    }
 }

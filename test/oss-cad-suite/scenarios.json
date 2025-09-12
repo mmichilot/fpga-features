@@ -1,6 +1,6 @@
 {
     "autoActivate": {
-        "image": "mcr.microsoft.com/devcontainers/base:focal",
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
             "oss-cad-suite": {
                 "autoActivate": true
