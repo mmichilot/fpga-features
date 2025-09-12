@@ -22,7 +22,6 @@ elif [ "${USERNAME}" = "none" ] || ! id -u ${USERNAME} > /dev/null 2>&1; then
     USERNAME=root
 fi
 echo "Username: ${USERNAME}"
-exit 1
 
 
 # Download and extract OSS CAD Suite
@@ -60,3 +59,4 @@ echo "cat ${SUITE_DIR}/activate.txt" >> "${bashrc}"
 chown -R "${USERNAME}:${USERNAME}" "${SUITE_DIR}"
 chmod -R u=rwx,go=rx "${SUITE_DIR}"
 stat -c "%U:%G ${SUITE_DIR}" ${SUITE_DIR}
+exit 1
