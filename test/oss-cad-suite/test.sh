@@ -1,5 +1,7 @@
 #!/bin/bash
 
+env
+
 source dev-container-features-test-lib
 
 check "oss-cad-suite environment is not activated" bash -c "[[ -z '${VIRTUAL_ENV_PROMPT}' ]]"
