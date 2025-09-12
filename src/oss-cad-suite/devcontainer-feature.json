@@ -1,7 +1,7 @@
 {
     "name": "OSS CAD Suite",
     "id": "oss-cad-suite",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A collection of open source software used for digital logic design",
     "options": {
         "autoActivate": {
