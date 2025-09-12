@@ -1,7 +1,6 @@
 #!/bin/bash
 
 env
-stat -c "%U:%G" ${SUITE_DIR}
 
 source dev-container-features-test-lib
 

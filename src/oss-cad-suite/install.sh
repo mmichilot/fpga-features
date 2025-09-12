@@ -59,3 +59,4 @@ echo "cat ${SUITE_DIR}/activate.txt" >> "${bashrc}"
 # Make the suite directory accessible to user
 chown -R "${USERNAME}:${USERNAME}" "${SUITE_DIR}"
 chmod -R u=rwx,go=rx "${SUITE_DIR}"
+stat -c "%U:%G ${SUITE_DIR}" ${SUITE_DIR}
