@@ -1,8 +1,5 @@
 #!/bin/bash
 
-env
-stat -c "%U:%G ${SUITE_DIR}" ${SUITE_DIR}
-echo "User: $(id)"
 cat /etc/passwd
 
 source dev-container-features-test-lib
