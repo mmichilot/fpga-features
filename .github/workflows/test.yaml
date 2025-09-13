@@ -18,7 +18,7 @@ jobs:
         baseImage:
           - debian:latest
           - ubuntu:latest
-          - mcr.microsoft.com/devcontainers/base:ubuntu
+          - mcr.microsoft.com/devcontainers/base:2.0.4-ubuntu
     steps:
       - uses: actions/checkout@v4
 
