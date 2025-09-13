@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-cat /etc/passwd
+getent passwd $(id -un)
 
 source dev-container-features-test-lib
 
