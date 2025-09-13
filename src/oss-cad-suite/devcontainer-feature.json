@@ -12,8 +12,8 @@
     },
     "containerEnv": {
         "SUITE_DIR": "/usr/local/oss-cad-suite"
-    },
-    "dependsOn": {
-        "ghcr.io/devcontainers/features/common-utils:latest": {}
     }
+    // "dependsOn": {
+    //     "ghcr.io/devcontainers/features/common-utils:latest": {}
+    // }
 }
