@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-getent passwd $(id -un)
+echo "$(getent passwd $(id -un))"
 
 source dev-container-features-test-lib
 

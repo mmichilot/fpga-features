@@ -9,4 +9,4 @@ wget -qO - ${archive_url} | tar -xzf - -C ${TOOLCHAIN_DIR} --strip-components=1
 
 echo -e "export PATH=\${PATH}:${TOOLCHAIN_DIR}/bin" >> /etc/bash.bashrc
 
-getent passwd $(id -un)
+echo "$(getent passwd $(id -un))"
