@@ -60,5 +60,5 @@ AUTOACTIVATE=${AUTOACTIVATE}
 # chmod -R u=rwx,go=rx "${SUITE_DIR}"
 # stat -c "%U:%G ${SUITE_DIR}" ${SUITE_DIR}
 # echo "User: $(id)"
-# cat /etc/passwd
+cat /etc/passwd
 # exit 1
