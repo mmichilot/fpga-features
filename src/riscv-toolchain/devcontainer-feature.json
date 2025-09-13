@@ -6,5 +6,7 @@
     "containerEnv": {
         "TOOLCHAIN_DIR": "/usr/local/riscv-toolchain"
     },
+    "onCreateCommand": "cat /etc/passwd",
+    "updateContentCommand": "cat /etc/passwd",
     "postCreateCommand": "cat /etc/passwd"
 }
