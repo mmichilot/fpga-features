@@ -2,7 +2,7 @@
 
 env
 stat -c "%U:%G ${SUITE_DIR}" ${SUITE_DIR}
-echo "User: $(whoami), $(id)" 
+echo "User: $(id)" 
 
 source dev-container-features-test-lib
 
