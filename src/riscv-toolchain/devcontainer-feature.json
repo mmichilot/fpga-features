@@ -5,8 +5,5 @@
     "description": "A pre-built RISC-V GCC toolchain from xPack",
     "containerEnv": {
         "TOOLCHAIN_DIR": "/usr/local/riscv-toolchain"
-    },
-    "dependsOn": {
-        "ghcr.io/devcontainers/features/common-utils:2": {}
     }
 }
