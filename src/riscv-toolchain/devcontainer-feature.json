@@ -5,8 +5,5 @@
     "description": "A pre-built RISC-V GCC toolchain from xPack",
     "containerEnv": {
         "TOOLCHAIN_DIR": "/usr/local/riscv-toolchain"
-    },
-    "onCreateCommand": "cat /etc/passwd",
-    "updateContentCommand": "cat /etc/passwd",
-    "postCreateCommand": "cat /etc/passwd"
+    }
 }

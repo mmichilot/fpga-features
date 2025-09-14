@@ -1,6 +1,4 @@
-#!/bin/bash
-
-cat /etc/passwd
+#!/usr/bin/env bash
 
 source dev-container-features-test-lib
 
