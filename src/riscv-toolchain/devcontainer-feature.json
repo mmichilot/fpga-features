@@ -1,7 +1,7 @@
 {
     "name": "RISC-V Toolchain",
     "id": "riscv-toolchain",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "description": "A pre-built RISC-V GCC toolchain from xPack",
     "containerEnv": {
         "TOOLCHAIN_DIR": "/usr/local/riscv-toolchain"
