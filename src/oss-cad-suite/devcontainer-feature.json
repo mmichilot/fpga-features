@@ -9,11 +9,5 @@
             "default": false,
             "description": "Automatically activate the OSS CAD Suite environment."
         }
-    },
-    "containerEnv": {
-        "SUITE_DIR": "/usr/local/oss-cad-suite"
     }
-    // "dependsOn": {
-    //     "ghcr.io/devcontainers/features/common-utils:latest": {}
-    // }
 }
