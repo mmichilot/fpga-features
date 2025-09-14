@@ -1,0 +1,9 @@
+{
+    "name": "Spike Simulator",
+    "id": "spike-sim",
+    "version": "1.0.0",
+    "description": "A RISC-V ISA simulator",
+    "containerEnv": {
+        "SPIKE_DIR": "/usr/local/spike"
+    }
+}
