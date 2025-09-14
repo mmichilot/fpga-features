@@ -12,7 +12,7 @@ done
 
 
 # Download and extract archive
-archive_url=$(curl -L https://api.github.com/repos/xpack-dev-tools/riscv-none-elf-gcc-xpack/releases/latest | \
+archive_url=$(curl -sL https://api.github.com/repos/xpack-dev-tools/riscv-none-elf-gcc-xpack/releases/latest | \
     jq -r '.assets[] | select(.name | contains("linux-x64") and (contains("sha") | not)) | .browser_download_url')
 
 mkdir -p ${TOOLCHAIN_DIR}
