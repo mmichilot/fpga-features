@@ -10,21 +10,21 @@ curl -sLo - "${archive_url}" | tar -xzf - -C "${HOME}"
 # Update .bashrc
 suite_dir=${HOME}/oss-cad-suite
 
-cat << EOF >> "${HOME}/.bashrc"
+cat <<-BASHRC >> "${HOME}/.bashrc"
 
-# OSS CAD Suite Environment
+# OSS CAD Suite environment
 export SUITE_DIR="${suite_dir}"
 
 if [ "${AUTOACTIVATE}" = "true" ]; then
     source ${suite_dir}/environment
 else
-    cat << 'END'
-    #
-    # To activate the OSS CAD Suite environment, use
-    #
-    #     $ source \${SUITE_DIR}/environment
-    #
-END
+	cat <<-MSG
+	#
+	# To activate the OSS CAD Suite environment, use
+	#
+	#     $ source \${SUITE_DIR}/environment
+	#
+	MSG
 fi
 
-EOF
+BASHRC
