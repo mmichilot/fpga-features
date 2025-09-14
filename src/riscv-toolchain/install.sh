@@ -16,7 +16,8 @@ archive_url=$(curl -L https://api.github.com/repos/xpack-dev-tools/riscv-none-el
     jq -r '.assets[] | select(.name | contains("linux-x64") and (contains("sha") | not)) | .browser_download_url')
 
 mkdir -p ${TOOLCHAIN_DIR}
+curl -sLo - "${archive_url}" | tar -xzf - -C ${TOOLCHAIN_DIR} --strip-components=1
 
-wget -qO - ${archive_url} | tar -xzf - -C ${TOOLCHAIN_DIR} --strip-components=1
 
+# Update $PATH
 echo -e "export PATH=\${PATH}:${TOOLCHAIN_DIR}/bin" >> /etc/bash.bashrc
