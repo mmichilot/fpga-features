@@ -2,7 +2,18 @@
 
 SUITE_DIR=${SUITE_DIR}
 AUTOACTIVATE=${AUTOACTIVATE}
-# USERNAME="${USERNAME:-"${_REMOTE_USER:-"automatic"}"}"
+USERNAME="${USERNAME:-"${_REMOTE_USER:-"automatic"}"}"
+
+# Install necessary packages
+apt-get update
+packages=("curl" "jq")
+for package in "${packages[@]}"; do
+    if ! command -v "${package}" >/dev/null 2>&1; then
+        echo "${package} not found, installing..." 
+        apt-get install -y "${package}"
+    fi
+done
+
 
 # Determine the appropriate non-root user
 # Copied from https://github.com/devcontainers/features/blob/main/src/anaconda/install.sh
