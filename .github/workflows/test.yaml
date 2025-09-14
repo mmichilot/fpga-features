@@ -15,6 +15,7 @@ jobs:
         features:
           - oss-cad-suite
           - riscv-toolchain
+          - spike-sim
         baseImage:
           - debian:latest
           - ubuntu:latest
